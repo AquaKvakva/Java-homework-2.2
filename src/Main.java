@@ -4,20 +4,20 @@ public class Main {
         int balance = 200;
         System.out.println("Баланс: " + balance);
 
-        int money = 900;
+        int money = 1000;
         System.out.println("Сумма пополнения: " + money);
 
-        boolean isBonus = (money >= 1000);
+        boolean isBonus = (money > 1000);
         int percent;
         if (isBonus) {
             percent = money * 1 / 100;
         } else {
             percent = 0;
         }
-        int x = money + percent;
-        System.out.println("Сумма пополнения c бонусами: " + x);
-        int total = balance + x;
-        System.out.println("Баланс после пополнения: " + total );
+        int bonusMoney = money + percent;
+        System.out.println("Сумма пополнения c бонусами: " + bonusMoney);
+        int total = balance + bonusMoney;
+        System.out.println("Баланс после пополнения: " + total);
 
     }
 }
